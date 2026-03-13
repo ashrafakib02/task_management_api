@@ -6,3 +6,9 @@ export const createTaskSchema = z.object({
   status: z.enum(["pending", "in_progress", "completed"]).optional(),
   dueDate: z.iso.datetime().optional()
 });
+export const updateTaskSchema = z.object({
+  title: z.string().min(1).optional(),
+  description: z.string().optional(),
+  status: z.enum(["pending", "in_progress", "completed"]).optional(),
+  dueDate: z.iso.datetime().optional()
+});

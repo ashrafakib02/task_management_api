@@ -27,3 +27,41 @@ export const getTaskByIdAndUserId = async (taskId, userId) => {
     }
   });
 };
+export const updateTaskById = async (taskId, userId, data) => {
+  const existingTask = await prisma.task.findFirst({
+    where: {
+      id: Number(taskId),
+      userId
+    }
+  });
+
+  if (!existingTask) {
+    return null;
+  }
+
+  return prisma.task.update({
+    where: { id: Number(taskId) },
+    data: {
+      ...data,
+      dueDate: data.dueDate ? new Date(data.dueDate) : undefined
+    }
+  });
+};
+export const deleteTaskById = async (taskId, userId) => {
+  const existingTask = await prisma.task.findFirst({
+    where: {
+      id: Number(taskId),
+      userId
+    }
+  });
+
+  if (!existingTask) {
+    return null;
+  }
+
+  await prisma.task.delete({
+    where: { id: Number(taskId) }
+  });
+
+  return existingTask;
+};
