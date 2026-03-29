@@ -135,6 +135,9 @@ DELETE /api/v1/tasks/:id
 
 
 ---
+## Status
+
+Completed core backend features including authentication, task CRUD, pagination, filtering, search, Swagger docs, and CI pipeline.
 
 ## ⚙️ Getting Started
 
@@ -183,6 +186,8 @@ Advanced API features
 Database integration with Prisma
 CI/CD workflow
 Clean and maintainable codebase
+
+
 👨‍💻 Author
 
 Ashraful Islam
