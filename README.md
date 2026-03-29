@@ -149,6 +149,12 @@ DELETE /api/v1/tasks/:id
 
 Completed core backend features including authentication, task CRUD, pagination, filtering, search, Swagger docs, and CI pipeline.
 
+
+## Demo
+
+This project is designed to be deployed as a live backend API with Swagger documentation for interactive testing.
+
+
 ## ⚙️ Getting Started
 
 ### 1. Clone Repo
