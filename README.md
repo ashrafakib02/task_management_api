@@ -157,6 +157,16 @@ This project is designed to be deployed as a live backend API with Swagger docum
 
 ## ⚙️ Getting Started
 
+### Deployment Notes
+
+This project can be deployed with:
+- Render for API hosting
+- Neon or PostgreSQL for database hosting
+
+Before deployment:
+- set environment variables
+- run Prisma migrations
+- generate Prisma client
 ### 1. Clone Repo
 ```bash
 git clone https://github.com/yourusername/yourrepo.git
