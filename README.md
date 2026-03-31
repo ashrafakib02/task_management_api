@@ -63,9 +63,11 @@ Prisma ORM
   ↓
 PostgreSQL
 ```
+```
 ✔ Separation of concerns
 ✔ Scalable & maintainable
 ✔ Production-ready design
+```
 ---
 
 ## 📂 Project Structure
