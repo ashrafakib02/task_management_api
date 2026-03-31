@@ -123,8 +123,8 @@ tests/               # Test files
 ## 📸 Screenshots
 
 ### 📘 Swagger API Docs
+![Swagger](./screenshots/swagger.png)
 
-/screenshots/swagger.png
 
 ---
 ## 🛠 Tech Stack
