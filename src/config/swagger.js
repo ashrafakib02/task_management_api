@@ -24,7 +24,7 @@ const options = {
     ],
     servers: [
       {
-        url: env.LIVE_URL
+        url: `${env.LIVE_URL}/api/v1`
       }
     ]
   },
